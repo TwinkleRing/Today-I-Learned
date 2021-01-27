@@ -52,8 +52,8 @@ app.post('/api/users/register', (req, res) => {
 #### PostMan 사용하기 
 
 
-1. POST로 request 보내기.
+1. POST로 request 보내기. <br>
 ![request](https://user-images.githubusercontent.com/43642411/106020707-66113080-6107-11eb-9a96-772d6bb990d0.PNG)
 
-2. 결과 확인
+2. 결과 확인 <br>
 ![성공](https://user-images.githubusercontent.com/43642411/106020795-76c1a680-6107-11eb-9456-ea152c6ef731.PNG)
