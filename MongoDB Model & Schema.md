@@ -6,7 +6,7 @@ Model은 스키마를 통해서 만드는 Instance로 이를 통하여, 데이�
 
 ### 사용법
 
-```
+```js
 // User의 모델과 스키마 설정
 const mongoose = require('mongoose');
 
