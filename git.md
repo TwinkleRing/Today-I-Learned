@@ -41,7 +41,7 @@ GIT은 이런 문제를 사전에 방지해준다. <br>
 1. Github에서 Repository 만들기
 2. SSH 설정 확인하기
 
-   1. 터미널 -> ls -a ~/.ssh  (id_rsa, id_rsa.pub가 있으면 ssh 설정이 되어 있는 상태)
+   1. 터미널 -> ls -a ~/.ssh   (만약 id_rsa, id_rsa.pub가 있으면 ssh 설정이 되어 있는 상태)
 
    2. GIT SSH 가이드 진행하기<br>
    [Generating a new SSH key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) 따라하기.
