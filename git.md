@@ -1,6 +1,6 @@
-GIT은 분산 버전 관리 시스템(VCS, Version Control System)이다.
+# GIT
 
-버전 관리란 이름 그대로 여러 파일을 하나의 버전으로 묶어 관리하는 것이다
+### GIT은 분산 버전 관리 시스템(VCS, Version Control System)이다. <br>버전 관리란 이름 그대로 여러 파일을 하나의 버전으로 묶어 관리하는 것이다
 
 ### GIT의 필요성
 
