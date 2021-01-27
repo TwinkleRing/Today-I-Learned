@@ -43,8 +43,8 @@ GIT은 이런 문제를 사전에 방지해준다. <br>
 
    1. 터미널 -> ls -a ~/.ssh   (만약 id_rsa, id_rsa.pub가 있으면 ssh 설정이 되어 있는 상태)
 
-   2. GIT SSH 가이드 진행하기<br>
-   [Generating a new SSH key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) 따라하기.
+   2. GIT SSH 가이드 진행하기  [Generating a new SSH key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)<br>
+   
 
 3. git remote add origin <name><url>
 4. git push -u origin main
