@@ -1,16 +1,16 @@
 # BodyParser & PostMan
 
-브라우저(클라이언트)에서 회원가입을 할 때 아이디, 비밀번호 등을 입력하고 서버에 보내야한다.
-서버는 클라이언트(브라우저)에서 입력한 데이터들을 받아서 처리해야하는데 받을 때 **BodyParser** 를 이용해서 받는다.
+### BodyParser 
 
-### BodyParser 설치
+
+브라우저(클라이언트)에서 회원가입을 할 때 아이디, 비밀번호 등을 입력하고 서버에 보내야한다. <br>
+서버는 클라이언트(브라우저)에서 입력한 데이터들을 받아서 처리해야하는데 받을 때 **BodyParser** 를 이용해서 받는다.
 
 ```
 npm install body-parser --save 
 ```
 
-
-### PostMan 사용하기
+### PostMan 
 
 Client에서 Request를 서버에 보냈을 때 제대로 처리되는지 확인해야한다.
 API Test Ttool인 PostMan을 사용하여 제대로 서버에 요청이 가는지 확인할 수 있다.
@@ -47,3 +47,13 @@ app.post('/api/users/register', (req, res) => {
 })
 
 ```
+
+
+#### PostMan 사용하기 
+
+
+1. POST로 request 보내기.
+![request](https://user-images.githubusercontent.com/43642411/106020707-66113080-6107-11eb-9a96-772d6bb990d0.PNG)
+
+2. 결과 확인
+![성공](https://user-images.githubusercontent.com/43642411/106020795-76c1a680-6107-11eb-9456-ea152c6ef731.PNG)
