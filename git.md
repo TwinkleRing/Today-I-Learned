@@ -22,15 +22,29 @@ GIT은 이런 문제를 사전에 방지해준다. <br>
 (pull을 통한 업데이트, patch로 파일 배포) 
 
 
-### GIT 설치
+### GIT 사용
 
 1. 설치 확인 : git --version, 버전이 뜨지 않으면 git-scm.com에서 설치하기.
 2. git init 으로 진행중인 프로젝트의 root 디렉토리에 가서 git 저장소 만들기
 3. git status 로 현재 상태 확인하기
 
 4. git add . 으로 Working Directory의 전체 파일을 스테이징 영역에 올리기
-* 스테이징 영역은 git 저장소에 넣기 전에 대기시키는 곳
-* .gitignore 파일로 git 저장소에 올리지 않을 것들을 지정해준다.
-4. git commit -m "commit message" 로 git 저장소에 올린다.
+* 스테이징 영역은 GIT 로컬 저장소에 넣기 전에 대기시키는 곳
+* .gitignore 파일로 로컬 저장소에 올리지 않을 것들을 지정해준다.
+4. git commit -m "commit message" 로 로컬 저장소에 올린다.
+
+5. git push 로 원격 저장소(Github)에 올리기
 
 
+### GIT과 GITHUB 연동하기(SSH 설정)
+
+1. Github에서 Repository 만들기
+2. SSH 설정 확인하기
+
+2-1. 터미널 -> ls -a ~/.ssh  (id_rsa, id_rsa.pub가 있으면 ssh 설정이 되어 있는 상태)
+
+2-2. GIT SSH 가이드 진행하기<br>
+[Generating a new SSH key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) 따라하기.
+
+3. git remote add origin <name><url>
+4. git push -u origin main
