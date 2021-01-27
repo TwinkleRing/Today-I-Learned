@@ -18,6 +18,7 @@ npm install nodemon --save-dev
 
 ## 3. 실행하기
 
-서버를 실행할 때 **nodemon** 으로 시작하기 위해 package.json - scripts 수정하기 => "backend" : "nodemon index.js"
-서버 실행 => npm run backend
+서버를 실행할 때 **nodemon**으로 시작하기 위해 package.json - scripts 수정하기 <br>
+scripts에서 "backend" : "nodemon index.js" 로 수정한다. <br>
+서버 실행은 터미널에서 **npm run backend**
 
