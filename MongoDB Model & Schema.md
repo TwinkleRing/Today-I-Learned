@@ -1,8 +1,8 @@
 ## MongoDB Model & Schema
 
-Mongoose는 MongoDB ODM(Object Document Mapping)로 Schema 객체를 사용하여 MongoDB에 Model을 정의합니다. <br>
-Schema는 테이블의 구조를 뜻하는데 Mongoose를 사용하면 SQL처럼 컬렉션의 구조를 정할 수 있습니다. <br>
-Model은 스키마를 통해서 만드는 Instance로 이를 통하여, 데이터베이스에 실제 작업을 할 수 있게 됩니다. <br>
+* Mongoose는 MongoDB ODM(Object Document Mapping) 중 하나로 Schema를 사용하여 MongoDB에 Model을 정의합니다. <br>
+* Schema는 테이블의 구조,  Mongoose를 사용하면 SQL처럼 컬렉션의 구조를 정할 수 있습니다. <br>
+* Model은 스키마를 통해서 만드는 객체로 이를 통해 데이터베이스에 실제 작업을 할 수 있게 됩니다. <br>
 
 예를 들어 어떤 웹사이트에서 회원가입을 해는데 이때 유저 아이디나 사는 곳, 나이를 입력한다. <br>
 입력한 값들이 유저 데이터베이스에 들어가야하는데 이런 유저와 관련된 데이터들을 보관하기 위해 User Model이 필요하다.
