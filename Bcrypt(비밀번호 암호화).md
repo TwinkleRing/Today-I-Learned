@@ -5,17 +5,16 @@
 
 ## Bcrypt 사용하기
 
-설치 : npm install bcrypt --save
+* 설치 : "npm install bcrypt --save"
+* index.js의 register 라우터에서 save 하기전에 salt를 이용하여 비밀번호를 암호화 시켜야한다.
 
-index.js의 register 라우터에서 save 하기전에 salt를 이용하여 비밀번호를 암호화 시켜야한다.
 
-
-#### User.js
+#### User.js 
 
 ```js
 
 const bcrypt = require('bcrypt');
-const saltRounds = 10; # 10자리 salt
+const saltRounds = 10; // 10자리 salt 
 
 // 정보들을 유저 모델을 저장하기 전에 실행해줌.
 userSchema.pre('save', function( next ) {
