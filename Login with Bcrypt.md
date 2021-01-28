@@ -3,14 +3,14 @@
 ## Login Route 만들기
 
 
-### 1. 데이터베이스에서 요청된 E-mail 찾기
-### 2. 데이터베이스에 요청한 E-mail이 있다면 비밀번호가 같은지 확인하기.
+#### 1. 데이터베이스에서 요청된 E-mail 찾기
+#### 2. 데이터베이스에 요청한 E-mail이 있다면 비밀번호가 같은지 확인하기.
 
-### 3. 비밀번호까지 같다면 Token 생성하기.
+#### 3. 비밀번호까지 같다면 Token 생성하기.
  * Token 생성을 위해 **JSONWEBTOKEN** 라이브러리 다운로드 하기 <br>
     -> **npm install jsonwebtoken --save**
 
-### 4. Token을 쿠키에 저장한다.
+#### 4. Token을 쿠키에 저장한다.
  * express에서 제공하는 Cookie Parser를 사용하자! 
  * 설치 -> **npm install cookie-parser --save**
 
