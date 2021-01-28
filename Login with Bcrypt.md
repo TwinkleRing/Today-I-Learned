@@ -85,3 +85,13 @@ userSchema.methods.generateToken = function(cb) {
     })
 }
 ```
+
+
+
+#### PostMan으로 Login 요청해보기.
+
+![post](https://user-images.githubusercontent.com/43642411/106162126-1a27bf80-61cb-11eb-8699-2bc4201b3263.PNG)
+
+<br>
+
+![응답](https://user-images.githubusercontent.com/43642411/106162213-34619d80-61cb-11eb-9ce4-253e0c302c73.PNG)
