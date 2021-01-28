@@ -10,10 +10,17 @@
  * Token 생성을 위해 **JSONWEBTOKEN** 라이브러리 다운로드 하기 <br>
     -> **npm install jsonwebtoken --save**
 
+### 4. Token을 쿠키에 저장한다.
+ * express에서 제공하는 Cookie Parser를 사용하자! 
+ * 설치 -> **npm install cookie-parser --save**
 
 index.js
 
 ```js
+const cookieParser = require("cookie-parser");
+
+app.use(cookieParser());
+
 app.post('/api/users/login', (req, res) => {
     // 로그인 시에 요청된 이메일을 데이터베이스에 있는지 찾는다.
     User.findOne({ email : req.body.email }, (err, user) => {
@@ -33,12 +40,11 @@ app.post('/api/users/login', (req, res) => {
             user.generateToken((err, user) => {
                 if(err) return res.status(400).send(err)
                 
-                // 토큰을 저장한다. 어디에 ? 쿠키.. , 로컬스토리지... 여기서는 쿠키에 하자
+                // 토큰을 저장한다. 어디에? 쿠키..? , 로컬 스토리지...? 일단은 쿠키에 저장하자!
                 res.cookie("x_auth", user.token)
-                .status(200)
-                .json({ loginSuccess : true , userId : user._id })
-
-
+                .status(200) // 성공!
+                .json({ loginSuccess : true , userId : user._id }) // json으로 데이터 보내주자.
+ 
             });
         });
 
@@ -51,6 +57,8 @@ app.post('/api/users/login', (req, res) => {
 User.js
 
 ```js
+const { JsonWebTokenError } = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
 
 userSchema.methods.comparePassword = function(plainPassword, cb) {
     // plainPassword : 1234567 암호화된 비밀번호 : $2b$10$ka0 ~~~
@@ -62,4 +70,18 @@ userSchema.methods.comparePassword = function(plainPassword, cb) {
     })
 }
 
+
+
+userSchema.methods.generateToken = function(cb) {
+    var user = this;
+
+    // jsonwebtoken을 이용해서 token을 생성하기
+    var token = jwt.sign(user._id.toHexString(), 'secretToken')
+
+    user.token = token 
+    user.save(function(err, user) {
+        if(err) return cb(err)
+        cb(null, user) // save가 잘 됬으면 user 정보만 다시 전달해준다.
+    })
+}
 ```
