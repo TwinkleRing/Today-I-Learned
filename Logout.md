@@ -7,7 +7,7 @@
 로그아웃할때 토큰을 지워주면 로그인 기능이 풀려버린다. <br>
 그래서 데이터베이스에서 유저의 토큰을 지워주면 된다. 
 
-index.js
+#### index.js
 ```js
 app.get('/api/users/logout', auth, (req, res) => {
 
