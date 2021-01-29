@@ -13,11 +13,11 @@ npm install body-parser --save
 ### PostMan 
 
 Client에서 Request를 서버에 보냈을 때 제대로 처리되는지 확인해야한다.
-API Test Ttool인 PostMan을 사용하여 제대로 서버에 요청이 가는지 확인할 수 있다.
+API Test Tool인 PostMan을 사용하여 제대로 서버에 요청이 가는지 확인할 수 있다.
 
 1. 회원가입(Register) Route 만들기
 
-Server - index.js
+#### Server - index.js
 ```js
 기존 코드 ~~
 const bodyParser = require("body-parser");
