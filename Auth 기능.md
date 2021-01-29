@@ -76,7 +76,7 @@ let auth = (req, res, next) => {
 module.exports = { auth };
 ```
 
-user.js
+#### user.js
 ```js
 // auth의 미들웨어
 userSchema.statics.findByToken = function(token , cb) {
