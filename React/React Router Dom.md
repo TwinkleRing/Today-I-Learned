@@ -1,11 +1,11 @@
 # React Router Dom
 
 
-React에서는 페이지간 이동을 할때 React Router Dom이라는 것을 사용한다.
+React에서는 페이지간 이동을 할 때 **React Router Dom**을 사용한다.
 
 ### 설치
 
-**root에서 cd client**
+**root - cd client**
 
 ```
 npm install react-router-dom --save
