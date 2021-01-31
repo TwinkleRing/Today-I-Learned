@@ -33,12 +33,12 @@ npx create-react-app .
 
 ### react 기본 구조 설명
 
-client - index.js
+**client - index.js**
 ```js
 ReactDOM.render(<App />, document.getElementById('root));
 ```
 
-public - index.html
+**public - index.html**
 
 ```html
 <div id="root"></div>
