@@ -5,7 +5,7 @@ React에서는 페이지간 이동을 할 때 **React Router Dom**을 사용한�
 
 ### 설치
 
-**root - cd client**
+**Root - cd client**
 
 ```
 npm install react-router-dom --save
