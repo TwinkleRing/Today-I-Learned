@@ -49,11 +49,12 @@ public - index.html
 ### CRA To Our Boiler Plate  ( Boiler Plate를 위한 구조 설정하기 )
 
 src 
-  * _actions
-  * _reducers
+  * _actions -> Redux를 위한 폴더들
+  * _reducers -> Redux를 위한 폴더들
   * components 
-        * views
-        App.js
-        Config.js
-  * hoc
-  * utils
+        * views -> 이 안에는 Page들을 넣는다.
+          * Sections -> 이 안에는 해당 페이지에 관련된 css 파일이나, component 들을 넣는다.
+        App.js -> Routing 관련 일을 처리한다.
+        Config.js -> 환경 변수 설정하는 곳
+  * hoc -> Higher Order Component
+  * utils -> 여러 군데에서 쓰일 수 있는 것들을 넣어둬서 어디서든 쓸수 있게 해둔다.
