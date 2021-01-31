@@ -52,9 +52,9 @@ src
   * _actions -> Redux를 위한 폴더들
   * _reducers -> Redux를 위한 폴더들
   * components 
-        * views -> 이 안에는 Page들을 넣는다.
-          * Sections -> 이 안에는 해당 페이지에 관련된 css 파일이나, component 들을 넣는다.<br>
-        App.js -> Routing 관련 일을 처리한다. <br>
-        Config.js -> 환경 변수 설정하는 곳 <br>
+        - views -> 이 안에는 Page들을 넣는다.
+          - Sections -> 이 안에는 해당 페이지에 관련된 css 파일이나, component 들을 넣는다.<br>
+        -App.js -> Routing 관련 일을 처리한다. <br>
+        -Config.js -> 환경 변수 설정하는 곳 <br>
   * hoc -> Higher Order Component <br>
   * utils -> 여러 군데에서 쓰일 수 있는 것들을 넣어둬서 어디서든 쓸수 있게 해둔다.
