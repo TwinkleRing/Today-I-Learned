@@ -49,8 +49,8 @@ public - index.html
 ### CRA To Our Boiler Plate  ( Boiler Plate를 위한 구조 설정하기 )
 
 src 
-  * _actions -> Redux를 위한 폴더들
-  * _reducers -> Redux를 위한 폴더들
+  * _actions -> Redux를 위한 폴더들<br>
+  * _reducers -> Redux를 위한 폴더들<br>
   * components 
         - views -> 이 안에는 Page들을 넣는다.
           - Sections -> 이 안에는 해당 페이지에 관련된 css 파일이나, component 들을 넣는다.<br>
