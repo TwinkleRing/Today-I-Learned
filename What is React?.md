@@ -31,4 +31,29 @@ Virtual DOM에서 10개의 아이템의 스냅샷을 먼저 찍어 놓는다. <b
 npx create-react-app .
 ```
 
+### react 기본 구조 설명
 
+client - index.js
+```js
+ReactDOM.render(<App />, document.getElementById('root));
+```
+
+public - index.html
+
+```html
+<div id="root"></div>
+```
+
+
+
+### CRA To Our Boiler Plate  ( Boiler Plate를 위한 구조 설정하기 )
+
+src 
+  * _actions
+  * _reducers
+  * components 
+        * views
+        App.js
+        Config.js
+  * hoc
+  * utils
