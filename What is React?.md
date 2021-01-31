@@ -19,3 +19,16 @@ Virtual DOM과 Real DOM은 갖고 있는 Property는 같다!<br>
 Virtual DOM에서 10개의 아이템의 스냅샷을 먼저 찍어 놓는다. <br>
 그리고 하나의 아이템가 업데이트되면 Virtual DO에서 하나 하나 다 살펴보고<br>
 스냅샷 찍어둔 부분과의 차이를 분석해서 변경된 부분만 Real DOM에서 업데이트 시켜준다.
+
+
+### Babel 
+> 최신 javacript 문법을 지원하지 않는 브라우저들을 위해서 최신 javascript 문법을 구현 브라우저에서도 동작할 수 있게 변환 시켜주는 개발 도구
+
+
+### 설치 방법
+
+```
+npx create-react-app .
+```
+
+
