@@ -1,6 +1,6 @@
 # React js
 > **2013년에 페이스북에서 발표한 javascript 프론트엔드 라이브러리**
-![react-logo](https://user-images.githubusercontent.com/43642411/106377420-3ea8b500-63e0-11eb-8247-8ad1a41e9924.png)
+![react](https://user-images.githubusercontent.com/43642411/106377441-57b16600-63e0-11eb-97b7-1eadfd15a2ec.png)
 
 ## 특징 
 * 컴포넌트 
