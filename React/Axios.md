@@ -57,11 +57,11 @@ Proxy를 설정해서 사용해보자.<br>
 참고> https://create-react-app.dev/docs/proxying-api-requests-in-development
 
 ### 설치 
-npm install http-proxy-middleware --save
+* npm install http-proxy-middleware --save
 
 
-#### client - src - setupProxy.js
-```
+#### client / src / setupProxy.js
+```js
 const { createProxyMiddleware } = require('http-proxy-middleware');
 module.exports = function(app) {
     app.use (
