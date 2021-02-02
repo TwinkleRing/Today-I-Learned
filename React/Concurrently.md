@@ -6,7 +6,7 @@
 * root - npm install concurrently --save
 
 ### 사용법
-root - package.json 
+Root - package.json 
 
 ```json
 "scripts": {
@@ -15,4 +15,9 @@ root - package.json
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev" : "concurrently \"npm run backend\" \"npm run start --prefix client\""
   },
+```
+
+### 실행
+```
+npm run dev
 ```
