@@ -7,5 +7,5 @@ https://ant.design/
 2. npm install antd --save
 
 ### import
-client - index.js
+client - index.js <br>
 import 'antd/dist/antd.css';
