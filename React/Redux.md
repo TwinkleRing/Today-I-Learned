@@ -36,7 +36,7 @@ Redux Data Flow
 
 ACTION은 App에서 무엇이 일어났는지 설명하는 객체이다.<br>
 App의 Store, 즉 저장소로 data를 보내는 방법이다. <br>
-ACTION을 호출하면 action creators는 App의 state(상태)를 변경해준다.
+ACTION을 호출하면 action Creators는 App의 state(상태)를 변경해준다.
 
 ```js
 function addTodo(text) {
@@ -46,14 +46,20 @@ function addTodo(text) {
   }
 }
 ```
+![1](https://user-images.githubusercontent.com/43642411/106702349-9129e180-662b-11eb-8778-5594ab2e8550.PNG)
 
-Reducer는 ACTION을 통해 어떠한 행동을 정의했다면, 그 결과 App의 상태가 어떻게 바뀌는지 설명해주는 함수이다.<br>
+Reducer는 ACTION을 통해 어떠한 행동을 정의했다면, 그 결과 App의 상태가 어떻게 바뀌는지 그 로직이 있는 함수이다.<br>
 state는 2에서 3으로 변하고 3에서 4로 변하고 하는게 가능하다.<br>
 액션을 수행함으로인해 원래 3이였던 state가 액션을 통해 4로 변했다. 이런걸 설명해주는게 Reducer이다.<br>
 액션 오브젝트를 받은 후에 nextState를 return하는게 Reducer이다.
 
-Store는 전체적인 App의 state을 감싸주는 역할을 한다.<br>
-Store 안에는 많은 메소드들이 있어서 이를 이용해서 State를 관리할 수 있다.
+Store는 전체적인 애플리케이션의 state 값들을 내장하는 역할을 한다.<br>
+Store 안에는 많은 메소드들이 있어서 이를 이용해서 State를 관리할 수 있다.<br>
+Reducer에 의해서만 State 값이 변경된다.
+
+Dispatch(디스패치)는 액션을 스토어에 전달하는 것을 의미한다.<br>
+
+Subscribe(구독)은 Store 값이 필요한 컴포넌트는 Store를 구독한다.
 
 
 
