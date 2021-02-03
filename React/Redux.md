@@ -34,8 +34,8 @@ Redux Data Flow
 
 
 
-ACTION은 App에서 무엇이 일어났는지 설명하는 객체이다.
-App의 Store, 즉 저장소로 data를 보내는 방법이다. 
+ACTION은 App에서 무엇이 일어났는지 설명하는 객체이다.<br>
+App의 Store, 즉 저장소로 data를 보내는 방법이다. <br>
 ACTION을 호출하면 action creators는 App의 state(상태)를 변경해준다.
 
 ```js
@@ -58,4 +58,4 @@ Store 안에는 많은 메소드들이 있어서 이를 이용해서 State를 �
 
 
 
-그림자료 출처 [따라하며 배우는 노드, 리액트 시리즈 - 기본 강의](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%A9%B0-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EB%85%B8%EB%93%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B8%B0%EB%B3%B8/dashboard)
+>그림자료 출처 [따라하며 배우는 노드, 리액트 시리즈 - 기본 강의](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%A9%B0-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EB%85%B8%EB%93%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B8%B0%EB%B3%B8/dashboard)
