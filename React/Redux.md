@@ -50,21 +50,21 @@ function addTodo(text) {
 ![1](https://user-images.githubusercontent.com/43642411/106702349-9129e180-662b-11eb-8778-5594ab2e8550.PNG)
 
 
-리덕스를 사용하면 위 그림과 같이 Store에서 모든 상태 관리가 일어난다.
-상태에 어떤 변화를 일으켜야 할 때는 ACTION으로 스토어에 전달한다.
-ACTION은 객체 형태로, 상태를 변화시킬 때 이 객체를 참조하여 변화를 일으킨다.
+리덕스를 사용하면 위 그림과 같이 Store에서 모든 상태 관리가 일어난다.<br>
+상태에 어떤 변화를 일으켜야 할 때는 ACTION으로 스토어에 전달한다.<br>
+ACTION은 객체 형태로, 상태를 변화시킬 때 이 객체를 참조하여 변화를 일으킨다.<br>
 이 ACTION을 전달하는 과정을 디스패치(Dispatch)라고 한다.
 
-스토어가 ACTION을 받으면 Reducer가 전달받은 액션을 기반으로 상태를 어떻게 변경시켜야 할지 정한다.
-ACTION을 처리하면 새 상태를 스토어에 저장한다.
-
+스토어가 ACTION을 받으면 Reducer가 전달받은 액션을 기반으로 상태를 어떻게 변경시켜야 할지 정한다.<br>
+ACTION을 처리하면 새 상태를 스토어에 저장한다.<br>
 스토어 안에 있는 상태가 바뀌면 스토어를 구독하고 있는 컴포넌트에 바로 전달한다.
 
 
+### Redux 용어
 Reducer는 ACTION을 통해 어떠한 행동을 정의했다면, 그 결과 App의 상태가 어떻게 바뀌는지 그 로직이 있는 함수이다.<br>
-state는 2에서 3으로 변하고 3에서 4로 변하고 하는게 가능하다.<br>
-액션을 수행함으로인해 원래 3이였던 state가 액션을 통해 4로 변했다. 이런걸 설명해주는게 Reducer이다.<br>
-액션 오브젝트를 받은 후에 nextState를 return하는게 Reducer이다.
+만약 State가 2에서 3으로 변하고 3에서 4로 변하고 하는게 가능하다.<br>
+ACTION을 수행하여 원래 3이였던 state가 4로 변했다. 이런걸 설명해주는게 Reducer이다.<br>
+ACTION 객체를 받은 후에 nextState를 return하는게 Reducer이다.
 
 Store는 전체적인 애플리케이션의 state 값들을 내장하는 역할을 한다.<br>
 Store 안에는 많은 메소드들이 있어서 이를 이용해서 State를 관리할 수 있다.<br>
@@ -77,5 +77,5 @@ Subscribe(구독)은 Store 값이 필요한 컴포넌트는 Store를 구독한�
 
 
 
->그림자료 출처 [따라하며 배우는 노드, 리액트 시리즈 - 기본 강의](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%A9%B0-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EB%85%B8%EB%93%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B8%B0%EB%B3%B8/dashboard)
+>그림자료 출처 [따라하며 배우는 노드, 리액트 시리즈 - 기본 강의](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%A9%B0-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EB%85%B8%EB%93%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B8%B0%EB%B3%B8/dashboard)<br>
 https://hwan1001.tistory.com/38
