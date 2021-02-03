@@ -22,11 +22,14 @@ Props와 State는 React에서 데이터를 사용할 때 다루는 개념이다.
 * 또한 State가 변하면 Re-render 된다.
 
 그래서 Redux는 이 State를 관리해주는 라이브러리이다.
+
 ![1](https://user-images.githubusercontent.com/43642411/106621806-4752e400-65b6-11eb-952d-d48a9adae43d.PNG)
+
 
 Redux Data Flow
 
 한 방향으로만 흐른다.
+
 ![2](https://user-images.githubusercontent.com/43642411/106621888-5d60a480-65b6-11eb-9707-5d56d156967f.PNG)
 
 
