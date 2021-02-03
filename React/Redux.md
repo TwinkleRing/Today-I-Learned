@@ -1,23 +1,20 @@
 # Redux
 
-### Redux란?
+## Redux란?
 * 리덕스는 State를 더 효율적으로 관리하는 데 사용하는 상태 관리 라이브러리이다.
 * 상태 관리의 로직을 컴포넌트 밖에서 처리한다.
 * 리덕스를 사용하면 스토어라는 개체 내부에 상태를 담고 사용하게 된다.
 
-state container
-
-
-### Props vs State
+## Props vs State
 Props와 State는 React에서 데이터를 사용할 때 다루는 개념이다.
 
-#### Props
+### Props
 * Props는 부모 컴포넌트가 자식 컴포넌트에게 주는 값이다.
 * Props는 immutable로 변하지 않는다.
 * 읽기 전용으로 만약 부모 컴포넌트에서 자식 컴포넌트로 1을 내려주면 1은 바뀔수 없는 값이다.
 * 1을 바꾸려면 다시 부모 컴포넌트에서 값을 내려줘야한다.
 
-#### State
+### State
 * State는 mutable로 컴포넌트 안에서 State를 변하게 하는 것이 가능하다.
 * 또한 State가 변하면 Re-render 된다.
 
@@ -46,7 +43,23 @@ function addTodo(text) {
   }
 }
 ```
+
+
+---
+
 ![1](https://user-images.githubusercontent.com/43642411/106702349-9129e180-662b-11eb-8778-5594ab2e8550.PNG)
+
+
+리덕스를 사용하면 위 그림과 같이 Store에서 모든 상태 관리가 일어난다.
+상태에 어떤 변화를 일으켜야 할 때는 ACTION으로 스토어에 전달한다.
+ACTION은 객체 형태로, 상태를 변화시킬 때 이 객체를 참조하여 변화를 일으킨다.
+이 ACTION을 전달하는 과정을 디스패치(Dispatch)라고 한다.
+
+스토어가 ACTION을 받으면 Reducer가 전달받은 액션을 기반으로 상태를 어떻게 변경시켜야 할지 정한다.
+ACTION을 처리하면 새 상태를 스토어에 저장한다.
+
+스토어 안에 있는 상태가 바뀌면 스토어를 구독하고 있는 컴포넌트에 바로 전달한다.
+
 
 Reducer는 ACTION을 통해 어떠한 행동을 정의했다면, 그 결과 App의 상태가 어떻게 바뀌는지 그 로직이 있는 함수이다.<br>
 state는 2에서 3으로 변하고 3에서 4로 변하고 하는게 가능하다.<br>
@@ -65,3 +78,4 @@ Subscribe(구독)은 Store 값이 필요한 컴포넌트는 Store를 구독한�
 
 
 >그림자료 출처 [따라하며 배우는 노드, 리액트 시리즈 - 기본 강의](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%A9%B0-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EB%85%B8%EB%93%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EA%B8%B0%EB%B3%B8/dashboard)
+https://hwan1001.tistory.com/38
