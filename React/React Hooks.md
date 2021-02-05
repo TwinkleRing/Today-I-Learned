@@ -39,8 +39,8 @@ export default function Hello() {
 }
 ```
 
-함수형 컴포넌트에서는 많은 기능을 사용하지 못한다.
-그러나 React에서 Hooks 를 사용하여 함수형에서도 여러 기능을 지원받을 수 있다.
+함수형 컴포넌트에서는 많은 기능을 사용하지 못했다.<br>
+그러나 이제 React에서 **Hooks**를 제공하여 함수형에서도 여러 기능을 지원받을 수 있다.
 
 ```js
 import React, { useEffect, useState } from 'react'
