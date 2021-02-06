@@ -1,21 +1,19 @@
 # Auth(HOC)
-
-HOC는 higher-order component
-다른 컴포넌트를 받은 다음에 새로운 컴포넌트를 return하는 function이다.
+>HOC는 higher-order component로 다른 컴포넌트를 받은 다음에 새로운 컴포넌트를 return하는 function이다. <br>
 
 ```js
 const EnhancedComponent = higherOrderComponent(WrappedComponent);
 ```
 
-Auth(HOC) 컴포넌트에 다른 컴포넌트(Landing, Login, Register)를 넣어주면
+Auth(HOC) 컴포넌트에 다른 컴포넌트(Landing, Login, Register)를 넣어주면,<br>
 
-Auth라는 HOC 컴포넌트가 BackEnd에 Request를 날린다.
-현재 랜딩페이지에 들어와있는 유저의 상태 정보를 가져온다.
-이 유저가 로그인되어있는지, admin이 있는 유저인지 자격을 체크한다.
+Auth라는 HOC 컴포넌트가 BackEnd에 Request를 날린다.<br>
+현재 랜딩페이지에 들어와있는 유저의 상태 정보를 가져온다.<br>
+이 유저가 로그인되어있는지, admin이 있는 유저인지 자격을 체크한다.<br>
 자격이 있는지 체크하고 권한이 없는 유저면 못들어오게 다른 페이지로 보낸다.
 
 
-hoc - auth.js
+### hoc - auth.js
 ```js
 import React, {useEffect} from 'react';
 import Axios from 'axios';
@@ -64,7 +62,7 @@ export default function (SpecificComponent,  option, adminRoute = null) {
 
 
 ```
-_action - user_action.js
+### _action - user_action.js
 ```js
 export function auth() {
     const request = axios.get('/api/users/auth')
@@ -78,7 +76,7 @@ export function auth() {
 ```
 
 
-App.js
+### App.js
 ```js
 import Auth from './hoc/auth'
 
@@ -97,7 +95,7 @@ function App() {
 }
 ```
 
-_reducers - user_reducer.js
+### _reducers - user_reducer.js
 ```js
 import {
     LOGIN_USER,
