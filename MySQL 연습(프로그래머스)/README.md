@@ -46,3 +46,20 @@ LIMIT 1;
 ```mysql
 SELECT MAX(DATETIME) FROM ANIMAL_INS;
 ```
+
+
+## IS NULL
+
+### 1. 이름이 없는 동물의 아이디
+```mysql
+SELECT ANIMAL_ID 
+FROM ANIMAL_INS 
+WHERE NAME IS NULL;
+```
+
+### 2. 이름이 있는 동물의 아이디
+```mysql
+SELECT ANIMAL_ID 
+FROM ANIMAL_INS 
+WHERE NAME IS NOT NULL;
+```
