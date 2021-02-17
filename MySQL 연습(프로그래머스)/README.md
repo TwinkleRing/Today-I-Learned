@@ -54,6 +54,19 @@ SELECT MIN(DATETIME)
 FROM ANIMAL_INS;
 ```
 
+### 3. 동물 수 구하기
+```mysql
+SELECT COUNT(*)
+FROM ANIMAL_INS;
+```
+
+### 4. 중복 제거하기
+```mysql
+SELECT COUNT(DISTINCT NAME) AS 'COUNT'
+FROM ANIMAL_INS
+WHERE NAME IS NOT NULL;
+
+```
 ## IS NULL
 
 ### 1. 이름이 없는 동물의 아이디
