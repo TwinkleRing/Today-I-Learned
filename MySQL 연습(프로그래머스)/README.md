@@ -142,8 +142,7 @@ ORDER BY NAME
 ### 3. 중성화 여부 파악하기
 
 ```mysql
-SELECT ANIMAL_ID, NAME, 
-IF(SEX_UPON_INTAKE LIKE '%Neutered%' OR SEX_UPON_INTAKE LIKE '%Spayed%', 'O','X') as "중성화"
+SELECT ANIMAL_ID, NAME, IF ((SEX_UPON_INTAKE LIKE '%Neutered%') OR (SEX_UPON_INTAKE LIKE '%Spayed%'), 'O','X') as "중성화"
 FROM ANIMAL_INS
 ORDER BY ANIMAL_ID ASC
 
