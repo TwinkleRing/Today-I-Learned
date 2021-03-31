@@ -10,3 +10,5 @@
 
 ### 2021-03-24 join 어렵다 ..
 
+### 2021-03-31 Aggregation 완료.
+![agg](https://user-images.githubusercontent.com/43642411/113091033-0a0d7a00-9226-11eb-8f30-97a84d91ae85.PNG)
